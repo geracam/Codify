@@ -1,0 +1,61 @@
+doctype html
+html
+	head
+		title Chat
+		link(rel="stylesheet", href="style.css")
+		script(src='http://code.jquery.com/jquery-1.7.1.min.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js')
+		script(src="/socket.io/socket.io.js")
+		script(src="script.js")
+	body
+		div.container#main
+			div.navbar.navbar-fixed-top
+				div.navbar-inner
+					div.container
+						a.brand(href="#") Learning to Use Node.js, Socket.io, and Jade! Chat with Gerardo
+			div#chatMessages
+			div.row#messages
+				input(type='text')#userMessage
+				div.btn-group
+					button.btn#submit(data-loading-text="Start Typing") Send Message
+					button.btn.dropdown-toggle(data-toggle="dropdown")
+						span.caret
+					ul.dropdown-menu
+						li
+							a#edit(href="#modalUserName", data-toggle="modal")
+								i.icon-user
+								| Change Username
+						li
+							a#info(href="#modalHowMade", data-toggle="modal")
+								i.icon-info-sign
+								| How was this made?
+			div#numberUsersDiv
+				p There is
+					span#numUsers
+					|   user(s) online.
+	div.modal.fade#modalUserName
+		div.modal-header
+			h3 Choose your username (you can change this later)
+		div.modal-body
+			p Choose a name :
+			input(type='text')#userName
+			div.alert.alert-error#alertTaken
+				| Sorry username is taken. Choose another one.
+		div.modal-footer
+			button.btn.btn-primary#usernameSubmit Let's go to the chat!
+	div.modal.fade#modalHowMade
+		div.modal-header
+			h3 How was this Made?
+		div.modal-body
+			p 	This application has been made with 
+				a(href="http://nodejs.org/") Node.js 
+				, 
+				a(href="http://socket.io/") Socket.io
+				, 
+				a(href="http://expressjs.com/") Express 
+				| et 
+				a(href="http://jade-lang.com/") Jade
+				| .
+			p	This application has been made by geracam-
+				a(href="http://gcgomez.com") Gerardo Camarena Gomez
+				| .
