@@ -44,7 +44,7 @@ while real-time analyzing and editing code. Let's see how this goes.
 
 Anyone is, as always, welcome to provide input and code!
 
-#H1 “Oh, it’s quite simple. If you are a friend, you speak the password, and the doors will open.”
+# “Oh, it’s quite simple. If you are a friend, you speak the password, and the doors will open.”
 
 
 
