@@ -21,6 +21,7 @@
 
 2. [Socket.IO](<http://socket.io/>) is JS library that lets you have real-time communication between your browser and server and vice-versa. Great for chat applications and stuff like that.
 3. [Express](<http://expressjs.com/>) is an MVC manager (kind of like Rails to Ruby) that lets you organize your node projects.
+
 4. [Node](<http://nodejs.org/>) is the programming language we're working with obviously.
 
 Install node.JS with [Homebrew](<http://brew.sh/>):
